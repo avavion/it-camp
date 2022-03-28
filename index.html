@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <script src="js/index.js" defer></script>
+    <script src="js/swiper-bundle.min.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Сайт-портфолио</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <img src="images/mars.png" alt="marsik)" class="header__image" />
+          <h1 class="header__title">Исхаков Марс Маратович</h1>
+          <p class="header__text">Начинающий веб-разработчик</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="section is--calculator">
+      <div class="calculator__inner">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-header__title">Калькулятор услуг</h2>
+          </div>
+          <div class="section-body calculator">
+            <div class="calculator-left">
+              <!-- Выпадающий список -->
+              <div class="calculator-select">
+                <label for="calculatorSelectType" class="calcuator__label">
+                  Выберите тип веб-сайта:
+                </label>
+
+                <select
+                  name="type"
+                  id="calculatorSelectType"
+                  class="calculator__select"
+                >
+                  <option data-price="10000" value="landing-page">
+                    Одностраничный (Landing Page)
+                  </option>
+
+                  <option data-price="50000" value="multi-page">
+                    Многостраничный
+                  </option>
+
+                  <option data-price="20000" value="corparation">
+                    Корпоративный
+                  </option>
+                </select>
+              </div>
+
+              <!-- Чек-боксы -->
+
+              <div class="calculator-checkbox">
+                <input
+                  type="checkbox"
+                  id="calculator-checkbox-1"
+                  class="dnone"
+                  data-price="15000"
+                />
+                <div class="checkbox"></div>
+                <label for="calculator-checkbox-1" class="calculator__label">
+                  Разработка калькулятора услуг
+                </label>
+              </div>
+
+              <div class="calculator-checkbox">
+                <input
+                  type="checkbox"
+                  id="calculator-checkbox-2"
+                  class="dnone"
+                  data-price="15000"
+                />
+                <div class="checkbox"></div>
+                <label for="calculator-checkbox-2" class="calculator__label">
+                  SEO оптимизация
+                </label>
+              </div>
+
+              <div class="calculator-checkbox">
+                <input
+                  type="checkbox"
+                  id="calculator-checkbox-3"
+                  class="dnone"
+                  data-price="5000"
+                />
+                <div class="checkbox"></div>
+                <label for="calculator-checkbox-3" class="calculator__label">
+                  Разработка формы обратной связи
+                </label>
+              </div>
+
+              <div class="calculator-checkbox">
+                <input
+                  type="checkbox"
+                  id="calculator-checkbox-4"
+                  class="dnone"
+                  data-price="8000"
+                />
+                <div class="checkbox"></div>
+                <label for="calculator-checkbox-4" class="calculator__label">
+                  Оптимизация веб-сайта под мобильные устройства
+                </label>
+              </div>
+            </div>
+
+            <div class="calculator-right">
+              <p class="calculator__total">
+                <span id="total_price">0</span> рублей
+              </p>
+              <p class="calculator__text">
+                приблизительная стоимость<br />оказания услуг
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section slider">
+      <div class="container">
+        <div class="slider-content swiper">
+          <div class="section-header">
+            <h2 class="section-header__title">
+                Фотографии
+            </h2>
+          </div>
+          <div class="slider-wrapper swiper-wrapper">
+            <img
+              src="images/slide1.png"
+              class="slide swiper-slide"
+              alt="slide"
+            />
+            <img
+              src="images/slide1.png"
+              class="slide swiper-slide"
+              alt="slide"
+            />
+            <img
+              src="images/slide1.png"
+              class="slide swiper-slide"
+              alt="slide"
+            />
+            <img
+              src="images/slide1.png"
+              class="slide swiper-slide"
+              alt="slide"
+            />
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-header__title">Тут будет продолжение вашего веб-сайта</h2>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
