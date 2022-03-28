@@ -35,17 +35,19 @@ const calculator = () => {
 }
 
 const slider = () => {
-    
+
     const container = document.querySelector(".swiper");
 
-    const option = {
+    if(!container) return false;
+
+    const options = {
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
         }
     }
 
-    const swiper = new Swiper(container, option)
+    const swiper = new Swiper(container, options)
 }
 
 const init = () => {
